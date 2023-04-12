@@ -1,5 +1,50 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-golang-x-arch (0.2.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream version 0.2.0
+  * Update Standards-Version to 4.6.2 (no changes)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 02 Jan 2023 22:59:14 +0800
+
+golang-golang-x-arch (0.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 0.1.0
+  * Switch to upstream tag version in uscan
+  * Update Standards-Version to 4.6.1 (no changes)
+  * Remove patch which is applied in new version
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 26 Oct 2022 16:10:51 +0800
+
+golang-golang-x-arch (0.0~git20201207.1e68675-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.0~git20201207.1e68675
+  * Backport patch to fix ppc64el test (Closes: #976939)
+  * Update debian/control
+    + Section -> golang
+    + debhelper-compat -> 13
+    + Standards-Version -> 4.5.1 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 18 Dec 2020 00:27:22 +0800
+
+golang-golang-x-arch (0.0~git20200511.f7c7858-3) unstable; urgency=medium
+
+  * debian/control:
+    - Add Multi-Arch: foreign
+  * debian/rules:
+    - Add testdata to DH_GOLANG_INSTALL_EXTRA.
+
+ -- Roger Shimizu <rosh@debian.org>  Sun, 26 Jul 2020 19:36:02 +0900
+
+golang-golang-x-arch (0.0~git20200511.f7c7858-2) unstable; urgency=medium
+
+  * Source only upload.
+
+ -- Roger Shimizu <rosh@debian.org>  Sat, 25 Jul 2020 19:56:54 +0900
+
+golang-golang-x-arch (0.0~git20200511.f7c7858-1) unstable; urgency=medium
+
+  * Initial release (Closes: #933687)
+
+ -- Roger Shimizu <rosh@debian.org>  Sat, 25 Jul 2020 14:44:18 +0900

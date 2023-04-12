@@ -1,4 +1,21 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_INSTALL_EXTRA := \
+	arm64/arm64asm/inst.json \
+	x86/x86asm/testdata/libmach8db.c
+
+# We want to build only the library packages themselves, not the accompanying
+# binaries.
+export DH_GOLANG_EXCLUDES := \
+	arm/armmap \
+	arm/armspec \
+	arm64/arm64gen \
+	arm64/arm64spec \
+	ppc64/ppc64map \
+	ppc64/ppc64spec \
+	x86/x86avxgen \
+	x86/x86map \
+	x86/x86spec
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
